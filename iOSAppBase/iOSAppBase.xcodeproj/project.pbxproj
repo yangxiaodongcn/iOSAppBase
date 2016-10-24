@@ -17,11 +17,6 @@
 		CB2302B41DB9EB2300221488 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302AD1DB9EB2300221488 /* UIViewController+Extension.swift */; };
 		CB2302BC1DB9F0BC00221488 /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302BB1DB9F0BC00221488 /* AboutApp.swift */; };
 		CB2302BE1DBA0E8400221488 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302BD1DBA0E8400221488 /* Date+Extension.swift */; };
-		CBD2FDAB1DBE01C90050318B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2FDA61DBE01C90050318B /* Alamofire.framework */; };
-		CBD2FDAC1DBE01C90050318B /* HEXColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2FDA71DBE01C90050318B /* HEXColor.framework */; };
-		CBD2FDAD1DBE01C90050318B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2FDA81DBE01C90050318B /* ObjectMapper.framework */; };
-		CBD2FDAE1DBE01C90050318B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2FDA91DBE01C90050318B /* SwiftyJSON.framework */; };
-		CBD2FDAF1DBE01C90050318B /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD2FDAA1DBE01C90050318B /* XCGLogger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD2FDAB1DBE01C90050318B /* Alamofire.framework in Frameworks */,
-				CBD2FDAC1DBE01C90050318B /* HEXColor.framework in Frameworks */,
-				CBD2FDAD1DBE01C90050318B /* ObjectMapper.framework in Frameworks */,
-				CBD2FDAE1DBE01C90050318B /* SwiftyJSON.framework in Frameworks */,
-				CBD2FDAF1DBE01C90050318B /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +205,6 @@
 				CB2302891DB9EB0E00221488 /* Frameworks */,
 				CB23028A1DB9EB0E00221488 /* Headers */,
 				CB23028B1DB9EB0E00221488 /* Resources */,
-				CBD2FDB01DBE01D60050318B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -300,27 +289,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CBD2FDB01DBE01D60050318B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/HEXColor.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB2302881DB9EB0E00221488 /* Sources */ = {
@@ -471,11 +439,14 @@
 				INFOPLIST_FILE = iOSAppBase/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangxiaodong.iOSAppBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -495,10 +466,12 @@
 				INFOPLIST_FILE = iOSAppBase/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangxiaodong.iOSAppBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
