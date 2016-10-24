@@ -1,0 +1,5 @@
+github "Hearst-DD/ObjectMapper" ~> 2.1
+github "Alamofire/Alamofire" ~> 4.0
+github "DaveWoodCom/XCGLogger" ~> 4.0.0
+github "SwiftyJSON/SwiftyJSON"
+github "yeahdongcn/UIColor-Hex-Swift" >= 3.0.2
