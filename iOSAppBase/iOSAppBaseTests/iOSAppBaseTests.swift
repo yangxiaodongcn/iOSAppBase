@@ -21,16 +21,27 @@ class iOSAppBaseTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
     
+    func testDevice() {
+        print("---------------------------------")
+        
+        print("\(Version.iPhone6Plus.pixels)")
+        print("\(Version.iPhone6Plus.points)")
+        print("\(Version.iPhone6Plus.PPI)")
+        print("\(Type.iPhone)")
+        
+        print("\(Device.version.pixels)")
+        print("\(Device.version.points)")
+        print("\(Device.version.PPI)")
+        print("\(Device.type)")
+        
+        print("---------------------------------")
+    }
 }

@@ -12,20 +12,20 @@ public class AboutApp: NSObject {
     
     static let instance = AboutApp()
     
-    var appName: String {
-        guard let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") else {
+    var name: String {
+        guard let name = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") else {
             printLog("App Name is nil:CFBundleDisplayName")
             return String()
         }
-        return appName as! String
+        return name as! String
     }
     
-    var appVersion: String {
-        guard let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] else {
+    var version: String {
+        guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] else {
             printLog("App Short Version is nil:CFBundleShortVersionString")
             return String()
         }
-        return appVersion as! String
+        return version as! String
     }
     
     var bundleName: String {
@@ -34,5 +34,12 @@ public class AboutApp: NSObject {
             return String()
         }
         return bundleName as! String
+    }
+    var bundleVersion: String {
+        guard let bundleVersion = Bundle.main.infoDictionary?["CFBundleVersion"] else {
+            printLog("Bundle Name is nil:CFBundleVersion")
+            return String()
+        }
+        return bundleVersion as! String
     }
 }

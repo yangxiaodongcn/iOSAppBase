@@ -17,6 +17,12 @@
 		CB2302B41DB9EB2300221488 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302AD1DB9EB2300221488 /* UIViewController+Extension.swift */; };
 		CB2302BC1DB9F0BC00221488 /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302BB1DB9F0BC00221488 /* AboutApp.swift */; };
 		CB2302BE1DBA0E8400221488 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2302BD1DBA0E8400221488 /* Date+Extension.swift */; };
+		CB5D05311DBF11F300164A73 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D05301DBF11F300164A73 /* UIDevice+Extension.swift */; };
+		CB5D053F1DBF1AB500164A73 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D053B1DBF1AB500164A73 /* Device.swift */; };
+		CB5D05401DBF1AB500164A73 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D053C1DBF1AB500164A73 /* Size.swift */; };
+		CB5D05411DBF1AB500164A73 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D053D1DBF1AB500164A73 /* Type.swift */; };
+		CB5D05421DBF1AB500164A73 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D053E1DBF1AB500164A73 /* Version.swift */; };
+		CBA6F7061DBF58C600548C2B /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA6F7051DBF58C600548C2B /* Timer+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		CB2302B71DB9EC3300221488 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		CB2302BB1DB9F0BC00221488 /* AboutApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
 		CB2302BD1DBA0E8400221488 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CB5D05301DBF11F300164A73 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		CB5D053B1DBF1AB500164A73 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		CB5D053C1DBF1AB500164A73 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		CB5D053D1DBF1AB500164A73 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		CB5D053E1DBF1AB500164A73 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		CBA6F7051DBF58C600548C2B /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		CBD2FDA61DBE01C90050318B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CBD2FDA71DBE01C90050318B /* HEXColor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HEXColor.framework; path = Carthage/Build/iOS/HEXColor.framework; sourceTree = "<group>"; };
 		CBD2FDA81DBE01C90050318B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -121,12 +133,14 @@
 		CB2302A81DB9EB2300221488 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CBA6F7051DBF58C600548C2B /* Timer+Extension.swift */,
 				CB2302A91DB9EB2300221488 /* NSObject+Extension.swift */,
 				CB2302AA1DB9EB2300221488 /* UIColor+Extension.swift */,
 				CB2302AB1DB9EB2300221488 /* UIScreen+Extension.swift */,
 				CB2302AC1DB9EB2300221488 /* UIView+Extension.swift */,
 				CB2302AD1DB9EB2300221488 /* UIViewController+Extension.swift */,
 				CB2302BD1DBA0E8400221488 /* Date+Extension.swift */,
+				CB5D05301DBF11F300164A73 /* UIDevice+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -166,9 +180,21 @@
 		CB2302B81DB9F09B00221488 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CB5D053A1DBF1AB500164A73 /* Device */,
 				CB2302BB1DB9F0BC00221488 /* AboutApp.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB5D053A1DBF1AB500164A73 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D053B1DBF1AB500164A73 /* Device.swift */,
+				CB5D053C1DBF1AB500164A73 /* Size.swift */,
+				CB5D053D1DBF1AB500164A73 /* Type.swift */,
+				CB5D053E1DBF1AB500164A73 /* Version.swift */,
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 		CB67B71E1DBCA10800AAE161 /* Frameworks */ = {
@@ -295,13 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5D05401DBF1AB500164A73 /* Size.swift in Sources */,
 				CB2302B01DB9EB2300221488 /* NSObject+Extension.swift in Sources */,
 				CB2302B11DB9EB2300221488 /* UIColor+Extension.swift in Sources */,
 				CB2302B31DB9EB2300221488 /* UIView+Extension.swift in Sources */,
 				CB2302BC1DB9F0BC00221488 /* AboutApp.swift in Sources */,
+				CB5D05421DBF1AB500164A73 /* Version.swift in Sources */,
+				CB5D05311DBF11F300164A73 /* UIDevice+Extension.swift in Sources */,
 				CB2302B41DB9EB2300221488 /* UIViewController+Extension.swift in Sources */,
 				CB2302B21DB9EB2300221488 /* UIScreen+Extension.swift in Sources */,
+				CBA6F7061DBF58C600548C2B /* Timer+Extension.swift in Sources */,
 				CB2302BE1DBA0E8400221488 /* Date+Extension.swift in Sources */,
+				CB5D053F1DBF1AB500164A73 /* Device.swift in Sources */,
+				CB5D05411DBF1AB500164A73 /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
