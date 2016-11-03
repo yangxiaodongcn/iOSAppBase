@@ -30,18 +30,18 @@ class iOSAppBaseTests: XCTestCase {
 //    }
     
     func testDevice() {
-        print("---------------------------------")
+        printLog("---------------------------------")
         
-        print("\(Version.iPhone6Plus.pixels)")
-        print("\(Version.iPhone6Plus.points)")
-        print("\(Version.iPhone6Plus.PPI)")
-        print("\(Type.iPhone)")
+        printLog("\(Version.iPhone6Plus.pixels)")
+        printLog("\(Version.iPhone6Plus.points)")
+        printLog("\(Version.iPhone6Plus.PPI)")
+        printLog("\(Type.iPhone)")
         
-        print("\(Device.version.pixels)")
-        print("\(Device.version.points)")
-        print("\(Device.version.PPI)")
-        print("\(Device.type)")
+        printLog("\(Device.version.pixels)")
+        printLog("\(Device.version.points)")
+        printLog("\(Device.version.PPI)")
+        printLog("\(Device.type)")
         
-        print("---------------------------------")
+        printLog("---------------------------------")
     }
 }

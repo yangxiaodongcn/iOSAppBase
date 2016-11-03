@@ -6,7 +6,6 @@
 //  Copyright © 2016 杨晓冬. All rights reserved.
 //
 
-import UIKit
 import Foundation
 
 public extension UIViewController {
@@ -18,7 +17,4 @@ public extension UIViewController {
         }
         return self.init(nibName: self.nameOfClass, bundle: nil)
     }
-    
-    
-    
 }
