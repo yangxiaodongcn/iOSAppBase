@@ -19,6 +19,7 @@ public extension Data {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: ReadingOptions.mappedIfSafe)
             return data
         } catch let error as NSError {
+            printLog("\(error)")
             return nil
         }
     }
